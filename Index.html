@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baccarat Shoe Analyzer</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script type="module" src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+    <h1>Baccarat Shoe Analyzer</h1>
+
+    Box A Shoe 1: <input type="text" id="box_a_shoe1" value="RBRBRR[R]BB[B]BBBRR{B}B[B]RBRR[R]BRR{B}B{R}BRBRR[R]RRRBRBRBB{R}BRR"><br>
+    Box A Shoe 2: <input type="text" id="box_a_shoe2" value="RBB[B]BBBBRBB[B]RR[R]RRRBB{R}R{B}B[B]BBRR{B}B{R}R[R]RBB{R}R[R]RRBRBRR{B}RBB[B]BBBBBR"><br>
+    Box B Shoe 1: <input type="text" id="box_b_shoe1" value="RBRBRRR[B]BB{B}BBBRRBBB[R]BRRR[B]RRBBRBRBRRR{R}RRBRBRBBRBRR"><br>
+    Box B Shoe 2: <input type="text" id="box_b_shoe2" value="RBBB{B}BBBRBBB[R]RR{R}RRBBRRBBB{B}BRRBBRRR{R}BBRRR{R}RBRBRRBRBBB{B}BBBBR"><br>
+
+    <button onclick="analyze_shoes()">Generate Results</button>
+
+    <textarea id="output" rows="6" cols="80" readonly></textarea>
+
+    <h3>Debug Output:</h3>
+    <textarea id="debug_output" rows="6" cols="80" readonly></textarea>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
